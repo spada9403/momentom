@@ -1,0 +1,96 @@
+body {
+  background-color: #2c3e50;
+}
+.mainForm {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+}
+
+.form,
+.greetings,
+.js-toDoForm {
+  display: none;
+}
+@keyframes loadToDo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.showing {
+  animation: loadToDo 0.8s linear;
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+.geo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 10px;
+}
+.js-weather {
+  display: block;
+}
+.weather {
+  display: flex;
+  justify-content: center;
+}
+input {
+  border: none;
+  font-size: 22px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+@keyframes fadeIN {
+  from {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+input:focus {
+  outline: none;
+  animation: fadeIN 0.8s linear forwards;
+}
+input::placeholder {
+  padding-left: 10px;
+}
+li {
+  font-size: 25px;
+}
+button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 30px;
+}
+.js-clock h1 {
+  font-size: 70px;
+}
+h4 {
+  margin-top: 0px;
+  font-size: 35px;
+}
+.js-toDoList {
+  left: 0;
+}
